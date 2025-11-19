@@ -27,7 +27,7 @@ If applicable, add screenshots to help explain your problem.
  - OS: [e.g. Windows 10, macOS 12.0, Ubuntu 20.04]
  - Python Version: [e.g. 3.8, 3.9, 3.10]
  - DBC Utility Version: [e.g. 1.0.0]
- - PyQt5 Version: [e.g. 5.15.0]
+ - PySide6 Version: [e.g. 6.0.0]
 
 **DBC File Information (if applicable):**
  - DBC File Name: [e.g. sample.dbc]

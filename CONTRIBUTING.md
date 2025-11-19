@@ -106,10 +106,10 @@ The executable will be created in the `dist/` directory.
 - Keep functions focused and concise
 - Use type hints where appropriate
 
-### PyQt5 Guidelines
+### PySide6 Guidelines
 
 - Use Qt naming conventions for Qt-specific code
-- Handle Qt signals and slots properly
+- Handle Qt signals and slots properly (use Signal instead of pyqtSignal)
 - Ensure proper cleanup of Qt resources
 - Use appropriate Qt widgets for the task
 

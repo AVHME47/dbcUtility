@@ -130,9 +130,9 @@ This creates:
 
 ### Common Issues
 
-**"PyQt5 not found"**
+**"PySide6 not found"**
 ```bash
-pip3 install PyQt5
+pip3 install PySide6
 ```
 
 **"cantools not found"**

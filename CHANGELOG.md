@@ -5,6 +5,22 @@ All notable changes to DBC Utility will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+- **BREAKING**: Migrated from PyQt5 to PySide6 for improved licensing flexibility
+- Updated all imports from PyQt5 to PySide6
+- Changed pyqtSignal to Signal in custom widgets
+- Updated build scripts to use PySide6 hidden imports
+- Updated all documentation to reflect PySide6 usage
+
+### Notes
+- PySide6 is licensed under LGPL v3, providing more flexibility than PyQt5's GPL v3
+- This change maintains GPL v3 license compatibility for the project
+- All functionality remains the same; only the underlying Qt binding has changed
+
+---
+
 ## [1.0.1] - 2025-01-29
 
 ### Changed
@@ -45,13 +61,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Proper copyright notices for GPL-licensed dependencies
 - Automatic backup file cleanup functionality
 - Enhanced icon handling for PyInstaller executables
-- GPL v3 license compliance for PyQt5 compatibility
+- GPL v3 license compliance for Qt bindings compatibility
 - **Project structure reorganization** with `src/` and `scripts/` folders
 - Initial release of DBC Utility
 - DBC file viewer with tree structure
 - DBC file editor with full CRUD operations
 - Advanced search functionality across messages and signals
-- PyQt5-based modern GUI
+- Qt-based modern GUI
 - Icon support for all buttons and tabs
 - File management (load, save, save-as)
 - Backup file creation during save operations
@@ -60,7 +76,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated README.md with detailed third-party license information
 - Improved GPL compliance documentation
 - Enhanced build script to clean existing executables
-- **License changed from MIT to GPL v3 for PyQt5 compliance**
+- **License changed from MIT to GPL v3 for Qt bindings compliance**
 - **Project structure reorganized** for better maintainability
 - **Build scripts moved** to `scripts/` directory
 - **Source code moved** to `src/` package
@@ -93,7 +109,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **File Operations**: Load, save, and save-as functionality
 
 ### Technical Details
-- Built with PyQt5 for cross-platform compatibility
+- Built with Qt for cross-platform compatibility
 - Uses cantools library for DBC file parsing
 - PyInstaller integration for executable creation
 - Comprehensive error handling and validation
