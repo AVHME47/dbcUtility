@@ -3,7 +3,7 @@
   <h1>DBC Viewer - CAN Database Editor</h1>
 </div>
 
-A simple PyQt5-based GUI application for viewing, editing, and managing CAN (Controller Area Network) DBC files.
+A simple PySide6-based GUI application for viewing, editing, and managing CAN (Controller Area Network) DBC files.
 
 ## Features
 
@@ -102,7 +102,7 @@ dbcViewer/
 
 ## Dependencies
 
-- **PyQt5** (≥5.15.0) - GUI framework
+- **PySide6** (≥6.0.0) - GUI framework
 - **cantools** (≥40.0.0) - DBC file parsing and manipulation
 - **pyinstaller** (≥5.0.0) - For creating executables
 
@@ -110,11 +110,11 @@ dbcViewer/
 
 This project uses the following third-party libraries:
 
-#### PyQt5
-- **License**: GPL v3 or Commercial License
+#### PySide6
+- **License**: LGPL v3 or Commercial License
 - **Copyright**: © 2020 The Qt Company Ltd.
-- **Website**: https://www.riverbankcomputing.com/software/pyqt/
-- **Note**: PyQt5 is licensed under GPL v3. If you distribute this application, you must comply with the GPL v3 license terms.
+- **Website**: https://www.qt.io/qt-for-python
+- **Note**: PySide6 is licensed under LGPL v3. This allows more flexibility in distribution compared to GPL v3, while still being compatible with this project's GPL v3 license.
 
 #### Cantools
 - **License**: MIT License
@@ -165,7 +165,7 @@ The application provides a tabbed interface with three main sections:
 ### Code Structure
 
 - **`main.py`**: Main application entry point
-- **`src/DBCUtility.py`**: Main application with PyQt5 window management
+- **`src/DBCUtility.py`**: Main application with PySide6 window management
 - **`src/dbc_editor.py`**: Core DBC processing using cantools library
 - **`src/dbc_editor_ui.py`**: UI components and dialog boxes
 - **`src/search_module.py`**: Search and filtering functionality
@@ -232,7 +232,7 @@ When distributing this application or any derivative works, you must:
 ### License Summary
 
 - **DBC Utility**: GPL v3
-- **PyQt5**: GPL v3 (compatible)
+- **PySide6**: LGPL v3 (compatible)
 - **Cantools**: MIT License (compatible)
 - **PyInstaller**: GPL v2 with exception (compatible)
 

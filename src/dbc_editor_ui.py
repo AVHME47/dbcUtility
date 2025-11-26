@@ -7,7 +7,7 @@ Provides the user interface for editing DBC files.
 
 import os
 import sys
-from PyQt5 import QtWidgets, QtCore, QtGui
+from PySide6 import QtWidgets, QtCore, QtGui
 from typing import Dict, List, Optional, Any
 import json
 

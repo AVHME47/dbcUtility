@@ -67,9 +67,9 @@ def build_executable():
             "--icon=icons/app_icon.ico",
             "--add-data=icons;icons",
             "--paths=src",  # Add src directory to Python path
-            "--hidden-import=PyQt5.QtCore",
-            "--hidden-import=PyQt5.QtGui",
-            "--hidden-import=PyQt5.QtWidgets",
+            "--hidden-import=PySide6.QtCore",
+            "--hidden-import=PySide6.QtGui",
+            "--hidden-import=PySide6.QtWidgets",
             "--hidden-import=cantools",
             "--hidden-import=search_module",
             "--hidden-import=dbc_editor_ui",

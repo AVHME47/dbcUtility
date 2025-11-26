@@ -21,7 +21,7 @@ Author: Abhijith Purohit
 Date: 15, July - 2025
 
 Description:
-    PyQt5 GUI to View and Edit DBC files.
+    PySide6 GUI to View and Edit DBC files.
 
 Version: v1.0.0
 
@@ -39,7 +39,7 @@ import os
 
 def show_import_error(pkg):
     try:
-        from PyQt5.QtWidgets import QMessageBox, QApplication
+        from PySide6.QtWidgets import QMessageBox, QApplication
         app = QApplication(sys.argv)
         QMessageBox.critical(None, "Missing Dependency",
             f"Required package '{pkg}' is not installed.\n"
@@ -51,9 +51,9 @@ def show_import_error(pkg):
     sys.exit(1)
 
 try:
-    from PyQt5 import QtWidgets, QtCore, QtGui
+    from PySide6 import QtWidgets, QtCore, QtGui
 except ImportError:
-    show_import_error('PyQt5')
+    show_import_error('PySide6')
 
 try:
     import cantools

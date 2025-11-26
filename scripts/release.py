@@ -95,7 +95,7 @@ This is the initial release of DBC Utility, a comprehensive CAN database editor.
 - Full DBC file editor with CRUD operations
 - Advanced search functionality
 
-- Modern PyQt5-based GUI
+- Modern PySide6-based GUI
 - Icon support for all buttons
 - File management (load, save, save-as)
 - Automatic backup file cleanup

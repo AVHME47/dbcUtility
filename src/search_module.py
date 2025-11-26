@@ -1,5 +1,5 @@
 import json
-from PyQt5 import QtWidgets, QtCore, QtGui
+from PySide6 import QtWidgets, QtCore, QtGui
 import logging
 
 logger = logging.getLogger(__name__)
@@ -9,7 +9,7 @@ class UnifiedSearchWidget(QtWidgets.QWidget):
     Unified search widget for both view and edit pages.
     Emits searchChanged(str, str) when the search query or filter changes.
     """
-    searchChanged = QtCore.pyqtSignal(str, str)  # search_query, filter_type
+    searchChanged = QtCore.Signal(str, str)  # search_query, filter_type
 
     def __init__(self, parent=None, mode="view"):
         """
